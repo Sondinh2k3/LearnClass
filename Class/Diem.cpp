@@ -6,25 +6,25 @@ class Diem {
     private:
         double x, y;
     public:
-        void Khoitao(double xx, double yy);
+        void Khoitao(double x, double y);
         void Trungnhau(Diem u);
         double Khoangcach(Diem u);
         void Xuat();
 };
 void Diem::Xuat(){
-    cout<<"("<<x<<", "<<y<<")\n";
+    cout<<"("<<this->x<<", "<<this->y<<")\n";
 }
 
-void Diem::Khoitao(double xx, double yy){
-    x = xx;
-    y = yy;
+void Diem::Khoitao(double x, double y){
+    this->x = x;
+    this->y = y;
 }
 
 double Diem::Khoangcach(Diem u){
-    return sqrt(pow(u.x-x, 2) + pow(u.y-y, 2));
+    return sqrt(pow(u.x-this->x, 2) + pow(u.y-this->y, 2));
 }
 void Diem::Trungnhau(Diem u){
-    if(x == u.x && y == u.y) cout<<"Trung nhau\n";
+    if(this->x == u.x && this->y == u.y) cout<<"Trung nhau\n";
     else{
         cout<<"Khong trung nhau\n";
     }
