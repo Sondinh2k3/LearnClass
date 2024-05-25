@@ -5,7 +5,7 @@ class sinhVien{
     private:
         int tuoi, id;
         double gpa;
-        string ten;
+        string ten, ns;
 
     public:
         void xinchao();
