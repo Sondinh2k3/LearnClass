@@ -1,25 +1,29 @@
-#include <iostream>
+#include <bits/stdc++.h>
 using namespace std;
 
-class Diem{
+class sinhVien{
     private:
-        double x,y;
+        int tuoi, id;
+        double gpa;
+        string ten;
+
     public:
-        void Khoitao(double xx, double yy){
-            x = xx; y =  yy;
-        };
-        void Nhap(){
-            cout<<"Nhap x = ";
-            cin>>x;
-             cout<<"Nhap y = ";
-             cin>>y;
-        };
-        void Xuat();
-        void Dichuyen(double dx, double dy);
+        void xinchao();
+        void dihoc();
 };
 
+void sinhVien::xinchao(){
+    cout<<"Hello\n";
+}
+
+void sinhVien::dihoc(){
+    cout<<"Di hoc \n";
+}
 
 int main(){
+   sinhVien x;
+   x.xinchao();
+   x.dihoc();
 
     return 0;
 }
