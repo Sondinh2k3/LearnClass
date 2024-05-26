@@ -7,7 +7,7 @@ class Diem {
         double x, y;
     public:
         //Cách khởi tạo hay dùng hơn
-        Diem(double x = 0, double y = 0): x(x), y(y){};
+        Diem(double x = 0, double y = 0): x(x), y(y){};//Đây là phương thức thiết lập
         void Trungnhau(Diem u);
         double Khoangcach(Diem u);
         void Xuat();
